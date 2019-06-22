@@ -15,4 +15,4 @@ items = [
     }
 ]
 Client = client.Client(sign_type=sign_type, key=app_key, app_id=app_id)
-Client.uploadsupply(currency_id="R", items=items)
+print(Client.uploadsupply(currency_id="R", items=items))

@@ -11,4 +11,4 @@ class Client:
 
     def uploadsupply(self, currency_id, items):
         data = {'api_code': Method.supply, 'currency_id': currency_id, 'items': json.dumps(items)}
-        self.request.send_request(params=data, filter_param={'items'})
+        return self.request.send_request(params=data, filter_param={'items'})

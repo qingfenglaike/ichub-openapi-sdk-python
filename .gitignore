@@ -1,2 +1,5 @@
 /.idea
 /__pycache__
+/ichubOpenApi/__pycache__
+/ichubOpenApi/request/__pycache__
+/ichubOpenApi/sign/__pycache__

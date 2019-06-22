@@ -25,6 +25,10 @@ class requestBase:
 
         sign = self.verify.buildRequestMysign(build_params)
         params['sign'] = sign
-
-        r = requests.post(const.HOST, data=params)
-        print(r.text)
+        try:
+            r = requests.post(const.HOST, data=params)
+            r = r.text
+            result = json.loads(r)
+            return result
+        except Exception as e:
+            return False

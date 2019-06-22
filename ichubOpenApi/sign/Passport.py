@@ -53,9 +53,7 @@ class Identify:
     def buildRequestMysign(self, para_temp):
         para_filter = self.paraFilter(para_temp)
         prestr = self.argSort(para_filter)
-        # if sign_type == 'MD5':
         prestr = str(prestr + "&" + self.key)
-        print(prestr)
         if self.sign_type == SIGN_TYPE_MD5:
             md5Verify = Md5.Verify()
             mysign = md5Verify.md5Sign(prestr)

@@ -21,16 +21,16 @@ with open('README.rst', 'rb') as f:
     readme = f.read().decode('utf-8')
 
 setup(
-    name='ichubOpenApi-openapi-sdk-python',
+    name='ichub-openapi-sdk-python',
     version=version,
     description='Ichub OpenApi Python SDK',
     long_description=readme,
     packages=find_packages(),
-    install_requires=['requests!=2.9.0',
+    install_requires=['requests',
                       'rsa'
                       ],
     include_package_data=True,
-    url='https://www.ichubOpenApi.com',
+    url='https://www.ichub.com',
 
     classifiers=[
         'Development Status :: 5 - Production/Stable',
