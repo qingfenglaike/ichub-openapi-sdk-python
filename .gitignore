@@ -3,3 +3,6 @@
 /ichubOpenApi/__pycache__
 /ichubOpenApi/request/__pycache__
 /ichubOpenApi/sign/__pycache__
+/dist
+/ichub_openapi_sdk_python.egg-info
+/build
