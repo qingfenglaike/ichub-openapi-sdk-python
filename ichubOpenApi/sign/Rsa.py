@@ -13,7 +13,7 @@ class Verify:
     # 私钥验签
     def privateRsaVerify(self, prestr, sign):
         private_key = open(self.private_key, 'r').read()
-        result = self.rsa_decrypt(prestr, private_key)
+        result = self.rsa_decrypt(sign, private_key)
 
         if result and result == prestr:
             return True
